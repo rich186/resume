@@ -1,0 +1,116 @@
+/* Fonts */
+
+@font-face {
+  font-family: 'Maven Pro';
+  src: url('../font/MavenPro-Medium.eot');
+  src: url('../font/MavenPro-Medium.eot?#iefix') format('embedded-opentype'),
+      url('../font/MavenPro-Medium.woff2') format('woff2'),
+      url('../font/MavenPro-Medium.woff') format('woff'),
+      url('../font/MavenPro-Medium.ttf') format('truetype'),
+      url('../font/MavenPro-Medium.svg#MavenPro-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Maven Pro';
+  src: url('../font/MavenPro-Bold.eot');
+  src: url('../font/MavenPro-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../font/MavenPro-Bold.woff2') format('woff2'),
+      url('../font/MavenPro-Bold.woff') format('woff'),
+      url('../font/MavenPro-Bold.ttf') format('truetype'),
+      url('../font/MavenPro-Bold.svg#MavenPro-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Maven Pro';
+  src: url('../font/MavenPro-Regular.eot');
+  src: url('../font/MavenPro-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../font/MavenPro-Regular.woff2') format('woff2'),
+      url('../font/MavenPro-Regular.woff') format('woff'),
+      url('../font/MavenPro-Regular.ttf') format('truetype'),
+      url('../font/MavenPro-Regular.svg#MavenPro-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* Layout */
+
+body {
+  font-family: 'Maven Pro', Helvetica, sans-serif;
+}
+
+
+/* NameBoard Module */
+
+.NameBoard {
+  width: 50vw;
+  margin: 20vh auto 0 auto;
+  text-align: center;
+}
+
+.NameBoard__name {
+  font-size: 2.3em;
+}
+
+.NameBoard__hats {
+  margin-top: 1rem;
+}
+
+.NameBoard__socialHandles {
+  margin-top: 1.5rem;
+}
+
+
+/* Hats Module */
+
+.Hats {
+  list-style-type: none;
+  padding: 0;
+}
+
+.Hats__hat {
+  display: inline-block;
+  background: #c1e4ff;
+  padding: .2em .4em .3em .4em;
+  margin-left: 1em;
+}
+
+.Hats__hat:before {
+  content: "\00B7";
+  position: absolute;
+  margin-left: -1.2em;
+  color: #666;
+}
+
+.Hats__hat:first-child { margin-left: 0; }
+.Hats__hat:first-child:before { display: none; }
+
+
+/* Social Handles Module */
+
+.SocialHandles {
+  list-style-type: none;
+  padding: 0;
+}
+
+.SocialHandles__handle {
+  display: inline-block;
+  margin: 0 .5em;
+}
+
+.SocialHandles__handle a {
+  display: block;
+  width: 1.5em;
+  height: 1.5em;
+  color: #333;
+  transform: scale(1);
+  transition: .2s ease-in-out transform;
+}
+
+.SocialHandles__handle a:hover {
+  transform: scale(1.2);
+}
